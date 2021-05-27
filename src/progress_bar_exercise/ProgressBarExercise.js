@@ -3,6 +3,8 @@ import Exercise from "../exercise/Exercise";
 
 import ProgressBar from "./ProgressBar/ProgressBar";
 
+import useRequest from "./hooks/useRequest";
+
 const ProgressBarExercise = () => {
   return (
     <div className="progress-bar-exercise">
@@ -20,13 +22,21 @@ export default ProgressBarExercise;
 // ----------------------------------------------------------------------------------
 
 export const Solution = () => {
+  const { state, onStartRequest, onFinishRequest } = useRequest();
+
   return (
     <div className="solution-container">
-      <ProgressBar progress={100} />
-      <button className="progress-bar-button start-request-button">
-        Start request
+      <ProgressBar progress={state.progress} />
+      <button
+        onClick={onStartRequest}
+        className="progress-bar-button start-request-button"
+      >
+        {state.loading ? "Loading..." : "Start request"}
       </button>
-      <button className="progress-bar-button finish-request-button">
+      <button
+        onClick={onFinishRequest}
+        className="progress-bar-button finish-request-button"
+      >
         Finish request
       </button>
     </div>
