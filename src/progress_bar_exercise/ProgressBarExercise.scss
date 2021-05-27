@@ -1,0 +1,47 @@
+.progress-bar-button {
+  width: 180px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: white;
+}
+
+.start-request-button {
+  border: 1px solid $green;
+  color: $green;
+
+  &:hover {
+    border: 2px solid $green;
+  }
+
+  &:active {
+    border: 3px solid $green;
+  }
+
+  &:disabled {
+    color: $gray-lighter;
+    border: 2px solid $gray-lighter;
+    cursor: not-allowed;
+  }
+}
+
+.finish-request-button {
+  border: 1px solid $red;
+  color: $red;
+
+  &:hover {
+    border: 2px solid $red;
+  }
+
+  &:active {
+    border: 3px solid $red;
+  }
+
+  &:disabled {
+    color: $gray-lighter;
+    border: 2px solid $gray-lighter;
+    cursor: not-allowed;
+  }
+}
