@@ -4,6 +4,7 @@
 These coding exercises are meant to help Spiff gain insight into how you would tackle actual feature requests by the product team. The exercises are relatively simple, but you are encouraged to treat them as if you were working on the Spiff codebase. **This means applying the same attention to code quality, tests, pull requests, commits, etc as you normally would.** 
 
 **_Quality is valued above quantity. We value simple and readable code_**
+---
 
 ### Instructions
 1. Clone the repo **(don't fork)**
