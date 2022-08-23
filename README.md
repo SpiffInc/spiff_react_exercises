@@ -22,7 +22,7 @@ These coding exercises are meant to help Spiff gain insight into how you would t
       - create a new branch off of v1
       - build on v1 to meet v2 requirements
       - create a pull request on your repo when finished
-5. Email giselle.bell@spiff.com with a link to your repo.
+5. Email gabe.ferreira@spiff.com with a link to your repo.
 
 ### Guidelines
 
